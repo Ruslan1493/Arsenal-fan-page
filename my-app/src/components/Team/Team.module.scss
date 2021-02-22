@@ -1,0 +1,54 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 50px 100px;
+}
+
+.gridItem{
+    padding: 1.3rem;
+    background-color: rgb(255, 255, 255);
+    min-width: 150px;
+    font-family: Geneva, Verdana;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(167, 162, 162, 0.2);
+    
+}
+
+.number{
+    font-family: "Ink Free";
+    width: 4rem;
+    border-top: 0.2em solid rgb(218, 218, 218);
+    border-bottom: 1px solid rgb(218, 218, 218);
+    font-size: 1.5rem;
+}
+
+.number::before {
+    content: "№";
+    padding-right: 1rem;
+    font-size: small;
+}
+
+@media screen and (max-width: 900px) and (min-width: 751px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 50px 100px;
+    }
+}
+
+@media screen and (max-width: 750px) and (min-width: 600px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 25px 50px;
+    }
+}
+
+@media screen and (max-width: 599px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 50px 70px;
+    }
+}

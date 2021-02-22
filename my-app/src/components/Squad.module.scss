@@ -1,0 +1,45 @@
+form{
+    margin: 2em;
+}
+
+form span{
+    display: block;
+}
+
+.squadTable div{
+    display: grid;
+    margin-left: 30em;
+}
+
+.squadTable div{
+    display: table;
+    margin-left: 30em;
+}
+
+.addPlayer{
+    display: block;
+    border: 1px solid #fff;
+    font-style: 'Roboto';
+    color: #fff;
+    border-radius: 12px;
+    background-color: #a52a2a;
+    padding: 12px;
+    margin: 1em auto;
+    transition: padding 1.2s, font-size 1s;
+}
+
+.addPlayer:hover{
+    color:  #a52a2a;
+    background-color: #fff;
+    border: 2px solid #a52a2a;
+    /* transform: rotate(20deg); */
+    padding: 10px;
+    font-size: 1em;
+}
+
+.createForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

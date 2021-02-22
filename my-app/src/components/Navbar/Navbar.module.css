@@ -1,0 +1,62 @@
+.navigation {
+    position: relative; 
+    background-color: brown;
+    color: cornsilk;
+    margin: 0 auto;
+    min-height: 200px;
+    max-width: 80%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.navbar{
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    margin: 0 auto;
+    /* margin-top: 2rem; */
+}
+
+.navigation > ul{
+    position: absolute;                  
+    bottom: 2rem;                          
+    left: 8rem; 
+}
+
+.navigation > ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.link{
+    padding: 1.1em;
+    list-style-type: none;
+    display: inline;
+    color: #ffffff;
+}
+
+.logo{
+    float: left;
+    background-repeat: no-repeat;
+    background-image: url('https://www.freepnglogos.com/uploads/arsenal-logo-png/arsenal-logo-symbol-arsenal-stl-model-grb-stl-arsenal-21.png');
+    width: 150px;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+}
+
+@media only screen and (max-width : 400px) {
+    ul li { 
+        display:block;
+        color: red;
+        float:left;
+    }
+    .navigation{
+        max-width:90%;
+        height:auto;
+    }
+}
